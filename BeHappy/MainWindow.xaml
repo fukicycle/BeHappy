@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BeHappy"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        AllowsTransparency="True"
+        Background="Transparent"
+        FontSize="16"
+        Title="BeHappy!" Height="600" Width="900">
+    <Border Background="#E3E8F7" CornerRadius="20" Padding="20">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="9*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="Be Happy!" FontWeight="Bold"/>
+            <Border Background="#BBC6EC" CornerRadius="10" Grid.Row="1">
+                <ItemsControl x:Name="contentsAreaItemsControl" >
+                </ItemsControl>
+            </Border>
+        </Grid>
+    </Border>
 </Window>
